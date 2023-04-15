@@ -1,0 +1,126 @@
+body{
+  font-family: 'Noto Serif', serif;
+  background-color: #FAF8F1;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-link{
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+.navbar-brand{
+  font-size: 1.4rem
+}
+.home-container{
+  padding: 5% 0;
+}
+.home-btn{
+  margin: 20px;
+}
+.permission-img{
+  width: 70%;
+}
+.sign-up{
+  padding: 30px 60px 5px 60px;
+}
+.btn-signup{
+  margin-top: 20px;
+}
+.email{
+  margin-top: 15%;
+}
+
+.paragraph-link{
+  margin-top: 20px;
+}
+.link{
+  text-decoration: none;
+}
+.secure{
+  margin-top: 2%;
+}
+.img-rounded{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.secure-heading{
+  margin-bottom: 20px;
+}
+.secure-icon{
+  color:#EB455F;
+}
+.secure-paragraph{
+  font-size: 1.1rem;
+}
+.secure-btn{
+  margin: 15px 25px;
+}
+.about{
+  padding: 1% 1%;
+}
+.privacy-policy{
+  line-height: 2;
+}
+.google{
+  margin: 10px 0;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  text-decoration: none;
+  background-color: #4285F4;
+  color:#FFFFFF;
+  border-radius: 4px;
+}
+.google:hover{
+  box-shadow: 0 0 20px #63bbf2;
+}
+.google-img{
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.google-div{
+  width: 48px;
+  height: 42px;
+  display: inline-block;
+  background-color: #FFFFFF;
+}
+.google-text{
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    top: 5px;
+}
+
+@media screen and (max-width:992px) {
+  .email{
+    margin-top: 0;
+  }
+  .signup{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width:410px){
+  .google{
+    font-size:0.9rem;
+    text-align: left;
+  }
+  .google-img{
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+  }
+  .google-div{
+    width: 36px;
+    height: 40px;
+  }
+  .google-text{
+    padding-left: 0;
+  }
+}

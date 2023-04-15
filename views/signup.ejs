@@ -1,0 +1,95 @@
+<%- include("partials/header") -%>
+
+
+<div class="container-fluid sign-up">
+  <%- include("partials/messages") -%>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="text-center">
+        <img class="permission-img signup" src="/images/permission.png" alt="permission-img">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <form action="/signup" method="post">
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="form-label" for="firstName">First Name</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input id="firstName" class="form-control" type="text" name="firstName" value="" required>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label" for="lastName">Last Name</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input id="lastName" class="form-control" type="text" name="lastName" value="" required>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <label class="form-label" for="email">Email</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+              <input id="email" class="form-control" type="email" name="email" value="" required>
+            </div>
+            <div class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <label class="form-label" for="password">Password</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+              <input id="password" class="form-control" type="password" name="password" value="" required>
+            </div>
+
+            <div class="form-text">
+              Your password must be atleast 6 characters long, contain atleast 1 Uppercase letter, 1 Lowercase letter and 1 number.
+            </div>
+
+          </div>
+
+          <div class="col-lg-12">
+            <label class="form-label" for="confirm-password">Confirm Password</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+              <input class="form-control" id="confirm-password" type="password" name="confirmPassword" value="" required>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="d-grid gap-2">
+              <button class="btn btn-lg btn-dark btn-signup" type="submit" name="submit">SignUp</button>
+            </div>
+            <div class="d-grid gap-2">
+              <a class="google"href="/auth/google" onclick="changeColor()">
+                <div class="google-div">
+                    <img class="google-img"src="/images/google.png" alt="google-img">
+                </div>
+                <div class="google-text">
+                  Sign up with Google
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="paragraph-link">Already have an account? <a class="link" href="/login">Login Now!</a></p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function changeColor(){
+    document.querySelector(".google").style.backgroundColor="#0F52BA"
+  }
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+</script>
+
+<%- include("partials/footer") -%>
